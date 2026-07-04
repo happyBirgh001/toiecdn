@@ -1,0 +1,58 @@
+<script>
+if(localStorage.getItem("login") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - English Ms.Thuy</title>
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+
+<header>
+    <h1>English Ms.Thuy</h1>
+
+    <nav>
+        <a href="index.html">Student Profile</a>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Teachers.html">Teachers</a>
+        <a href="BranchAddress.html">Branch Address</a>
+    
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <img src="img/Screenshot 2026-06-28 224453.png.jpg" class="avatar">
+
+        <h2>Nguyen Thi Nhu Y </h2>
+
+        <p>Mã học viên: NTNY310</p>
+        <p>Email: N*******10@gmail.com</p>
+        <p>SĐT: 07*****310</p>
+        <p>Trình độ: Intermediate</p>
+
+    </div>
+</div>
+
+<button onclick="logout()" class="logout-btn">
+    Đăng xuất
+</button>
+
+<footer>
+    © 2019 English Ms.Thuy
+</footer>
+<script>
+function logout(){
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>

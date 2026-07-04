@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơ sở</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+    <h1>English Ms.Thuy</h1>
+
+    <nav>
+        <a href="index.html">Student Profile</a>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Teachers.html">Teachers</a>
+        <a href="BranchAddress.html">Branch Address</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="branch">
+        <h2>Cơ sở Đà Nẵng</h2>
+        <p>247 Thế Lữ, Phường An Hải Bắc, Quận Sơn Trà</p>
+        <p> 0568 043 043</p>
+    </div>
+    <section class="map">
+    <h2>Địa chỉ trung tâm</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=247%20The%20Lu,%20An%20Hai,%20Da%20Nang,%20Viet%20Nam&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+
+    <div class="branch">
+        <h2>Cơ sở Đà Nẵng</h2>
+        <p>48 Hòa Minh 1, Phường An Hải Bắc, Quận Sơn Trà, Đà Nẵng.</p>
+        <p> 0568 043 043</p>
+    </div>
+    <section class="map">
+    <h2>Địa chỉ trung tâm</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=48%20Hoa%20Minh%201,%20An%20Hai%20Bac,%20Son%20Tra,%20Da%20Nang,%20Viet%20Nam&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+
+</div>
+<button onclick="logout()" class="logout-btn">
+    Đăng xuất
+</button>
+<footer>
+    © 2019 English Ms.Thuy
+</footer>
+<script>
+function logout(){
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

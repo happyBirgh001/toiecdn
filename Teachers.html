@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo viên</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+    <h1>English Ms.Thuy</h1>
+
+    <nav>
+        <a href="index.html">Student Profile</a>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Teachers.html">Teachers</a>
+        <a href="BranchAddress.html">Branch Address</a>
+    </nav>
+</header>
+
+
+<div class="container teacher-list">
+
+    <div class="teacher-card">
+        <img src="images/teacher1.jpg">
+        <h3>Ms.Thuy</h3>
+        <p>IELTS 8.</p>
+        <p>15 năm kinh nghiệm</p>
+    </div>
+
+    <div class="teacher-card">
+        <img src="images/teacher2.jpg">
+        <h3>David Brown</h3>
+        <p>TESOL Certified</p>
+        <p>7 năm kinh nghiệm</p>
+    </div>  
+
+</div>
+<button onclick="logout()" class="logout-btn">
+    Đăng xuất
+</button>
+<footer>
+    © 2019 English Ms.Thuy
+</footer>
+<script>
+function logout(){
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+}
+</script>
+
+
+</body>
+</html>

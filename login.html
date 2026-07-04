@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Ms.Thuy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    width:320px;
+    background:#fff;
+    padding:30px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    text-align:center;
+}
+
+.login-box h1{
+    color:#2d7dd2;
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.login-box p{
+    color:#666;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#2d7dd2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d63ac;
+}
+
+#error{
+    margin-top:12px;
+    color:red;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+    <h1>English Ms.Thuy</h1>
+    <p>Hệ thống học viên</p>
+
+    <input type="text" id="username" placeholder="Tài khoản">
+
+    <input type="password" id="password" placeholder="Mật khẩu">
+
+    <button onclick="login()">Đăng nhập</button>
+
+    <p id="error"></p>
+</div>
+
+<script>
+function login(){
+    let user = document.getElementById("username").value.trim();
+    let pass = document.getElementById("password").value.trim();
+
+    if(user === "NhuY" && pass === "0932448760"){
+        localStorage.setItem("login","true");
+        window.location.href = "index.html";
+    }else{
+        document.getElementById("error").textContent =
+        "Sai tài khoản hoặc mật khẩu!";
+    }
+}
+</script>
+
+</body>
+</html>
