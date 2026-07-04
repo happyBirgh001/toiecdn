@@ -6,11 +6,12 @@ if(localStorage.getItem("login") !== "true"){
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule - English Ms.Thuy</title>
     <link rel="stylesheet" href="css.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -35,7 +36,13 @@ if(localStorage.getItem("login") !== "true"){
 
         <p>Mã học viên: NTNY310</p>
         <p>Email: N*******10@gmail.com</p>
-        <p>SĐT: 07*****310</p>
+     <p>
+    SĐT:
+    <span id="phone">07******10</span>
+    <button onclick="togglePhone()" class="eye-btn">
+        <i id="eyeIcon" class="fa-solid fa-eye"></i>
+    </button>
+</p>
         <p>Trình độ: Intermediate</p>
 
     </div>
@@ -61,6 +68,24 @@ if (window.location.pathname.endsWith("/index.html")) {
         window.location.search +
         window.location.hash
     );
+}
+</script>
+    <script>
+let showPhone = false;
+
+function togglePhone(){
+    const phone = document.getElementById("phone");
+    const eye = document.getElementById("eyeIcon");
+
+    if(showPhone){
+        phone.textContent = "07******10";
+        eye.className = "fa-solid fa-eye";
+    }else{
+        phone.textContent = "0708042310";
+        eye.className = "fa-solid fa-eye-slash";
+    }
+
+    showPhone = !showPhone;
 }
 </script>
 </body>
