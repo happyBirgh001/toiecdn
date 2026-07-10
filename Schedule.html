@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Schedule - English Ms.Thuy</title>
- <link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="css.css">
 </head>
 
 <body>
@@ -21,29 +21,29 @@
 
 <div class="container">
 
-    <h2>📚 Weekly Class Schedule - Week 2 (TOEIC Intermediate)</h2>
+    <h2>📚 Weekly Class Schedule - Week 3 (TOEIC Intermediate)</h2>
 
     <div class="schedule">
 
-        <!-- THỨ 4: SÁNG 8H - 10H30 -->
+        <!-- THỨ 2: TỐI 19H - 21H30 -->
         <div class="lesson">
             <div class="lesson-header" onclick="toggleLesson(this)">
-                <span>Wednesday - TOEIC Listening & Vocabulary</span>
+                <span>Monday - TOEIC Listening Part 3</span>
                 <span class="arrow">▼</span>
             </div>
             <div class="lesson-content">
                 <p><strong>Subject:</strong> TOEIC Listening</p>
-                <p><strong>Time:</strong> 08:00 - 10:30</p>
+                <p><strong>Time:</strong> 19:00 - 21:30</p>
                 <p><strong>Teacher:</strong> Ms.Thuy</p>
                 <p><strong>Room:</strong> A101</p>
-                <p><strong>Content:</strong> Master TOEIC Listening Part 3 (Conversations) & Office Vocabulary.</p>
+                <p><strong>Content:</strong> Strategy for long conversations and inferring implied meaning.</p>
             </div>
         </div>
 
-        <!-- THỨ 6: TỐI 19H - 21H -->
+        <!-- THỨ 4: TỐI 19H - 21H30 -->
         <div class="lesson">
             <div class="lesson-header" onclick="toggleLesson(this)">
-                <span>Friday - TOEIC Grammar & Reading</span>
+                <span>Wednesday - TOEIC Reading & Grammar</span>
                 <span class="arrow">▼</span>
             </div>
             <div class="lesson-content">
@@ -51,22 +51,22 @@
                 <p><strong>Time:</strong> 19:00 - 21:30</p>
                 <p><strong>Teacher:</strong> David Brown</p>
                 <p><strong>Room:</strong> A102</p>
-                <p><strong>Content:</strong> TOEIC Part 3 & 4: Gerunds vs Infinitives and Subject-Verb Agreement.</p>
+                <p><strong>Content:</strong> Clause structure, Relative clauses, and Part 5 practice.</p>
             </div>
         </div>
 
-        <!-- CHỦ NHẬT: CHIỀU 17H - 19H30 -->
+        <!-- THỨ 6: TỐI 19H - 21H30 -->
         <div class="lesson">
             <div class="lesson-header" onclick="toggleLesson(this)">
-                <span>Sunday - TOEIC Listening & Business English</span>
+                <span>Friday - TOEIC Full Practice & Review</span>
                 <span class="arrow">▼</span>
             </div>
             <div class="lesson-content">
-                <p><strong>Subject:</strong> TOEIC Listening</p>
-                <p><strong>Time:</strong> 17:00 - 19:30</p>
+                <p><strong>Subject:</strong> TOEIC Practice</p>
+                <p><strong>Time:</strong> 19:00 - 21:30</p>
                 <p><strong>Teacher:</strong> Ms.Thuy</p>
                 <p><strong>Room:</strong> A103</p>
-                <p><strong>Content:</strong> TOEIC Listening Part 2 (Short Talks) & Business Marketing Vocabulary.</p>
+                <p><strong>Content:</strong> Mock Test, time management tips, and vocabulary review.</p>
             </div>
         </div>
 
@@ -87,6 +87,11 @@ function toggleLesson(element){
         arrow.classList.add("rotate");
     }
 }
+
+function logout(){
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+}
 </script>
 
 <button onclick="logout()" class="logout-btn">
@@ -97,11 +102,5 @@ function toggleLesson(element){
     © 2019 English Ms.Thuy
 </footer>
 
-<script>
-function logout(){
-    localStorage.removeItem("login");
-    window.location.href = "login.html";
-}
-</script>
 </body>
 </html>
