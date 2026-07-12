@@ -94,7 +94,7 @@ function login(){
     let user = document.getElementById("username").value.trim();
     let pass = document.getElementById("password").value.trim();
 
-    if(user === "NhuY" && pass === "Nhuy123@"){
+    if(user === "NhuY" && pass === "0932448760"){
         localStorage.setItem("login","true");
         window.location.href = "index.html";
     }else{
@@ -102,6 +102,10 @@ function login(){
         "Sai tài khoản hoặc mật khẩu!";
     }
 }
+if (!sessionStorage.getItem('visitedHome')) {
+            // Nếu chưa, chuyển hướng ngay về index.html
+            window.location.href = 'index.html'; 
+        }
 </script>
 
 </body>

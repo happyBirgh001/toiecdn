@@ -14,6 +14,7 @@ if(localStorage.getItem("login") !== "true"){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    
 
 <header>
     <h1>English Ms.Thuy</h1>
@@ -87,6 +88,10 @@ function togglePhone(){
 
     showPhone = !showPhone;
 }
+
+    // Khi vào trang chủ, tạo một đánh dấu (key) trong trình duyệt
+    sessionStorage.setItem('visitedHome', 'true');
+
 </script>
 </body>
 </html>
